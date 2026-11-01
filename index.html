@@ -1,9 +1,26 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Travelgram | Perfil de viagens de Isabela Torres</title>
+    <meta
+      name="description"
+      content="Perfil de viagens de Isabela Torres no Travelgram: fotos de 37 países, com destaque para Veneza, Florença, Roma e a costa italiana, compartilhadas a partir de São Paulo."
+    />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Travelgram" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="Isabela Torres | Perfil de viagens no Travelgram"
+    />
+    <meta
+      property="og:description"
+      content="Histórias de viagem, cultura e gastronomia registradas em cada clique."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,14 +29,21 @@
       rel="stylesheet"
     />
 
-    <title>Travelgram | Perfil de viagens</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
     <div class="bg-surface-color">
       <nav class="container">
-        <a id="logo" href="">
-          <img src="img/Logo.svg" alt="Logomarca Travelgram" />
+        <a id="logo" href="./">
+          <img
+            src="img/Logo.svg"
+            alt="Travelgram, página inicial"
+            width="162"
+            height="32"
+          />
         </a>
 
         <ul id="primary-menu">
@@ -27,22 +51,30 @@
             <a href="#">
               <img
                 src="img/icons/MagnifyingGlass.svg"
-                alt="Ícone de pesquisar"
+                alt="Pesquisar"
+                width="24"
+                height="24"
               />
             </a>
           </li>
 
-          <li>
+          <li class="nav-secondary">
             <a href="#">Explorar</a>
           </li>
 
-          <li>
+          <li class="nav-secondary">
             <a href="#">Minhas Viagens</a>
           </li>
 
           <li>
             <a href="#">
-              <img src="img/profile pic.png" alt="Imagem de Isabela Torres" />
+              <img
+                class="nav-avatar"
+                src="img/profile%20pic.png"
+                alt="Meu perfil"
+                width="40"
+                height="40"
+              />
             </a>
           </li>
         </ul>
@@ -51,7 +83,12 @@
       <header>
         <div class="container">
           <div id="profile">
-            <img src="img/profile pic.png" alt="Imagem de Isabela Torres" />
+            <img
+              src="img/profile%20pic.png"
+              alt="Foto de perfil de Isabela Torres sorrindo"
+              width="176"
+              height="176"
+            />
 
             <div>
               <h1>Isabela Torres</h1>
@@ -67,83 +104,128 @@
 
           <ul id="info">
             <li>
-              <a href="#">
-                <img src="img/icons/MapPin.svg" alt="Ícone de localização" />
-                <span>São Paulo, Brazil</span>
-              </a>
+              <img src="img/icons/MapPin.svg" alt="" width="24" height="24" />
+              <span>São Paulo, Brazil</span>
             </li>
 
             <li>
-              <a href="#">
-                <img src="img/icons/AirplaneTilt.svg" alt="Ícone avião" />
-                <span>37 países</span>
-              </a>
+              <img
+                src="img/icons/AirplaneTilt.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+              <span>37 países</span>
             </li>
 
             <li>
-              <a href="#">
-                <img src="img/icons/Image.svg" alt="Ícone de imagem" />
-                <span>240 fotos</span>
-              </a>
+              <img src="img/icons/Image.svg" alt="" width="24" height="24" />
+              <span>240 fotos</span>
             </li>
           </ul>
         </div>
       </header>
     </div>
 
-    <main class="container">
+    <main id="conteudo" class="container">
+      <h2 class="visually-hidden">Galeria de fotos</h2>
+
       <img
-        src="img/images/Image 01.png"
+        src="img/images/Image%2001.png"
         alt="Passeio de barco em um lago cercado por montanhas"
+        width="645"
+        height="645"
+        decoding="async"
       />
       <img
-        src="img/images/Image 02.png"
+        src="img/images/Image%2002.png"
         alt="Canal de Veneza com prédios históricos ao pôr do sol"
+        width="645"
+        height="645"
+        decoding="async"
       />
       <img
-        src="img/images/Image 03.png"
+        src="img/images/Image%2003.png"
         alt="Ponte de Rialto sobre o Grande Canal de Veneza"
+        width="645"
+        height="645"
+        decoding="async"
       />
       <img
-        src="img/images/Image 04.png"
+        src="img/images/Image%2004.png"
         alt="Restaurante à beira de um canal em Veneza"
+        width="645"
+        height="645"
+        decoding="async"
       />
       <img
-        src="img/images/Image 05.png"
+        src="img/images/Image%2005.png"
         alt="Casas coloridas construídas sobre falésias à beira-mar"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
       <img
-        src="img/images/Image 06.png"
+        src="img/images/Image%2006.png"
         alt="Vila costeira italiana com casas coloridas e mar azul"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
       <img
-        src="img/images/Image 07.png"
+        src="img/images/Image%2007.png"
         alt="Ponte Vecchio sobre o rio Arno em Florença"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
       <img
-        src="img/images/Image 08.png"
+        src="img/images/Image%2008.png"
         alt="Catedral de Santa Maria del Fiore em Florença"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
       <img
-        src="img/images/Image 09.png"
+        src="img/images/Image%2009.png"
         alt="Rua estreita italiana com fachadas coloridas e flores"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
       <img
-        src="img/images/Image 10.png"
+        src="img/images/Image%2010.png"
         alt="Restaurante italiano com mesas externas e uma scooter"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
       <img
-        src="img/images/Image 11.png"
+        src="img/images/Image%2011.png"
         alt="Mesa com pratos de massa italiana e taças de bebidas"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
       <img
-        src="img/images/Image 12.png"
+        src="img/images/Image%2012.png"
         alt="Coliseu de Roma visto de baixo em um dia ensolarado"
+        width="645"
+        height="645"
+        loading="lazy"
+        decoding="async"
       />
     </main>
 
     <footer class="container">
-      <span> Travelgram &copy; 2024 </span>
+      <span>Travelgram &copy; 2024</span>
 
       <span>Termos de uso</span>
 
