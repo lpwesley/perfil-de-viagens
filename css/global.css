@@ -15,10 +15,13 @@
   --text-color-secondary: #6c6c6c;
 
   --font-family: "Poppins", sans-serif;
-  --text-lg: bold 32px/125% var(--font-family);
-  --text: 16px/150% var(--font-family);
-  --text-md: 14px/170% var(--font-family);
-  --text-sm: 12px/170% var(--font-family);
+  /* clamp(): 1.5rem no celular, cresce com a tela até 2rem (32px original) */
+  --text-lg: bold clamp(1.5rem, 1.2rem + 1.5vw, 2rem) / 125% var(--font-family);
+  --text: 1rem/150% var(--font-family);
+  --text-md: 0.875rem/170% var(--font-family);
+  --text-sm: 0.75rem/170% var(--font-family);
+
+  --touch-target: 2.75rem;
 }
 
 body {
@@ -27,22 +30,75 @@ body {
   background-color: var(--background-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* O coral da marca tem contraste baixo (3.3:1) para texto,
+   então ele aparece no sublinhado e o texto fica escuro */
 a:hover {
-  color: var(--brand-color);
+  color: var(--text-color-primary);
   text-decoration: underline;
+  text-decoration-color: var(--brand-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand-color);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
 }
 
 .container {
-  padding-inline: 32px;
-  max-width: 1280px;
+  padding-inline: 1rem;
+  max-width: 80rem;
   margin-inline: auto;
 }
 
 .bg-surface-color {
   background-color: var(--surface-color);
+}
+
+/* Esconde da tela, mas mantém para leitores de tela e buscadores */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background-color: var(--text-color-primary);
+  font-weight: bold;
+  transform: translateY(-200%);
+}
+
+.skip-link,
+.skip-link:hover {
+  color: var(--background-color);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+@media (min-width: 48rem) {
+  .container {
+    padding-inline: 2rem;
+  }
 }

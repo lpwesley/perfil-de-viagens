@@ -1,27 +1,32 @@
+/* Celular usa 13px, tablet 12px (--text-sm) e desktop 14px (--text-md) */
 header {
-  padding-block: 32px;
-  font: var(--text-md);
+  padding-block: 1.5rem;
+  font: 0.8125rem/170% var(--font-family);
 }
 
 header .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 
 #profile {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 1rem;
+  text-align: center;
 }
 
 #profile > div {
-  max-width: 384px;
+  max-width: 24rem;
 }
 
 #profile img {
-  width: 176px;
-  height: 176px;
+  flex-shrink: 0;
+  width: 7.5rem;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -29,19 +34,73 @@ header .container {
 #profile h1 {
   font: var(--text-lg);
   color: var(--text-color-primary);
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
+/* No celular as informações usam 12px para caberem numa linha só */
 #info {
   list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 280px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  font: var(--text-sm);
 }
 
-#info a {
+#info li {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.375rem;
+}
+
+/* Tablet: composição horizontal, com as informações em coluna à direita */
+@media (min-width: 48rem) {
+  header {
+    padding-block: 2rem;
+    font: var(--text-sm);
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #profile {
+    flex-direction: row;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  #profile > div {
+    max-width: 19rem;
+  }
+
+  #profile img {
+    width: 11rem;
+  }
+
+  #info {
+    flex-direction: column;
+    gap: 1rem;
+    font: inherit;
+  }
+
+  #info li {
+    gap: 0.5rem;
+  }
+}
+
+/* Desktop: fonte e larguras originais */
+@media (min-width: 64rem) {
+  header {
+    font: var(--text-md);
+  }
+
+  #profile > div {
+    max-width: 24rem;
+  }
+
+  #info {
+    width: 17.5rem;
+  }
 }
