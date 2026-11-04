@@ -1,122 +1,81 @@
+# Travelgram | Perfil de Viagens
 
-# Perfil de Viagens | Travelgram
+![Projeto guiado](https://img.shields.io/badge/🎓_Projeto-Guiado_(Rocketseat)-8257e5?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Página de perfil de viagens desenvolvida durante meus estudos na **formação Full Stack da Rocketseat**, com foco na construção de interfaces utilizando HTML5 e CSS3.
+> **🎓 Projeto guiado:** desenvolvido acompanhando as aulas da **formação Full Stack da [Rocketseat](https://www.rocketseat.com.br/)**. O layout e a proposta são do curso; a implementação foi feita por mim, seguindo o professor.
 
-O projeto apresenta um perfil de viajante, informações sobre suas experiências e uma galeria de fotografias, explorando conceitos de estruturação semântica, Flexbox, responsividade, acessibilidade e boas práticas de SEO.
+Página de perfil de um viajante, com biografia, estatísticas de viagens e galeria de fotos. Construída com HTML5 e CSS3, explorando semântica, Flexbox, responsividade mobile-first, acessibilidade e SEO.
 
-## 📸 Prévia do projeto
+🔗 **[Ver projeto online](https://lpwesley.github.io/perfil-de-viagens/)**
+
+## 📸 Prévia
 
 ![Prévia do projeto Travelgram](./img/preview-travelgram.png)
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias
 
-- **HTML5:** estruturação semântica dos conteúdos.
-- **CSS3:** estilização e organização visual da interface.
-- **Flexbox:** alinhamento e distribuição dos elementos.
-- **Media Queries:** adaptação do layout para diferentes telas.
-- **Git:** controle de versão.
-- **GitHub Pages:** publicação do projeto.
+- **HTML5:** estrutura semântica
+- **CSS3:** Flexbox, variáveis CSS e Media Queries
+- **Git e GitHub:** commits, branches e Pull Requests
+- **GitHub Pages:** publicação
 
-## ⚙️ Características do projeto
+## ⚙️ Funcionalidades
 
-- Cabeçalho com navegação e identidade visual.
-- Seção de perfil com fotografia e biografia do viajante.
-- Exibição de informações e estatísticas de viagens.
-- Galeria de fotografias organizada em layout responsivo.
-- Utilização de imagens e ícones na interface.
-- Organização dos estilos com variáveis CSS.
-- Adaptação da interface para dispositivos móveis.
-- Aplicação de melhorias de acessibilidade e SEO.
+- Cabeçalho com navegação e identidade visual
+- Perfil com foto, biografia e estatísticas de viagens
+- Galeria de fotos com layout responsivo
+- Interface adaptada para dispositivos móveis
+- Melhorias de acessibilidade e SEO
 
-## 📚 Aprendizados
+## 📚 O que pratiquei
 
-Durante o desenvolvimento, pratiquei conceitos importantes para a construção de interfaces modernas e responsivas.
+**HTML, acessibilidade e SEO**
+- Elementos semânticos e hierarquia de títulos
+- Idioma da página com `lang` e textos alternativos com `alt`
+- Metadados para mecanismos de busca
 
-### HTML e semântica
+**CSS e Flexbox**
+- `display: flex`, `align-items`, `justify-content` e `gap`
+- Variáveis CSS com `:root` para cores e tipografia
+- Organização e reutilização de estilos
 
-- Estruturação de páginas com elementos semânticos.
-- Organização do conteúdo em seções.
-- Utilização de imagens com textos alternativos.
-- Associação de classes aos componentes da interface.
+**Responsividade**
+- Abordagem mobile-first com Media Queries
+- Adaptação do perfil e da galeria a diferentes telas
+- Dimensionamento e posicionamento de imagens
 
-### CSS e Flexbox
+**Git e GitHub**
+- Branches para novas funcionalidades e integração via Pull Requests
+- Deploy com GitHub Pages
 
-- Organização de elementos com `display: flex`.
-- Alinhamento com `align-items` e `justify-content`.
-- Distribuição de espaçamentos com `gap`.
-- Estilização de tipografia, cores e imagens.
-- Utilização de variáveis CSS com `:root`.
-- Organização e reutilização de estilos.
-
-### Responsividade
-
-- Aplicação do conceito mobile-first.
-- Utilização de Media Queries.
-- Adaptação do perfil e da galeria para diferentes telas.
-- Controle do dimensionamento e posicionamento de imagens.
-
-### Acessibilidade e SEO
-
-- Utilização de elementos HTML semânticos.
-- Definição do idioma da página com `lang`.
-- Uso de atributos `alt` nas imagens.
-- Organização dos títulos e conteúdos.
-- Configuração de metadados relevantes para mecanismos de busca.
-- Melhoria da navegação e da identificação de elementos.
-
-### Git e GitHub
-
-- Versionamento do código com commits.
-- Criação de branches para novas funcionalidades.
-- Integração de alterações com Pull Requests.
-- Publicação do projeto utilizando GitHub Pages.
-
-## 📂 Estrutura do projeto
+## 📂 Estrutura
 
 ```text
 perfil-de-viagens/
 ├── css/
 ├── img/
-│   └── preview.png
+│   └── preview-travelgram.png
 ├── index.html
 └── README.md
 ```
 
-As pastas `css` e `img` armazenam, respectivamente, os arquivos de estilização e os recursos visuais utilizados no projeto.
+## 💻 Como executar
 
-## 💻 Como executar localmente
-
-O projeto utiliza HTML e CSS, sem necessidade de instalação de dependências.
-
-**1. Clone o repositório:**
+Não há dependências. Basta clonar e abrir no navegador:
 
 ```bash
 git clone https://github.com/lpwesley/perfil-de-viagens.git
-```
-
-**2. Acesse a pasta do projeto:**
-
-```bash
 cd perfil-de-viagens
 ```
 
-**3. Execute o projeto:**
-
-Abra o arquivo `index.html` no navegador ou utilize a extensão **Live Server** no Visual Studio Code.
-
-## 📝 Observações
-
-Este projeto foi desenvolvido para fins educacionais, como parte da formação Full Stack da Rocketseat.
-
-A implementação e os ajustes realizados durante o desenvolvimento fazem parte da minha evolução no aprendizado de HTML, CSS e construção de interfaces responsivas.
+Abra o `index.html` no navegador ou use a extensão **Live Server** no VS Code.
 
 ## 🎓 Créditos
 
-Projeto desenvolvido com base no conteúdo da **[Rocketseat](https://www.rocketseat.com.br/)**.
+Projeto proposto pela **[Rocketseat](https://www.rocketseat.com.br/)** como parte da formação Full Stack. O design e o conteúdo base pertencem ao curso.
 
 ---
 
-Desenvolvido por **Wesley Lauwer**.
-
-[GitHub](https://github.com/lpwesley)
+Desenvolvido por **Wesley Lauwer** · [GitHub](https://github.com/lpwesley)
